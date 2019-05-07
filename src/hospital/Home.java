@@ -27,9 +27,6 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        BtnExit = new javax.swing.JButton();
         LblDatamaster = new javax.swing.JLabel();
         BtnDokter = new javax.swing.JButton();
         BtnPasien = new javax.swing.JButton();
@@ -39,38 +36,11 @@ public class Home extends javax.swing.JFrame {
         LblPerawatan = new javax.swing.JLabel();
         BtnRawatJalan = new javax.swing.JButton();
         BtnRawatInap = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel1.setBackground(new java.awt.Color(195, 216, 236));
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("Aplikasi  Rumah Sakit");
-
-        BtnExit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        BtnExit.setForeground(new java.awt.Color(255, 0, 0));
-        BtnExit.setText("X");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 307, Short.MAX_VALUE)
-                .addComponent(BtnExit))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(16, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(BtnExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
 
         LblDatamaster.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         LblDatamaster.setText("Data Master");
@@ -92,48 +62,78 @@ public class Home extends javax.swing.JFrame {
 
         BtnRawatInap.setText("Rawat Inap");
 
+        jPanel1.setBackground(new java.awt.Color(215, 231, 244));
+
+        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel1.setText("Rumah Sakit Mitra Ceria");
+
+        jLabel4.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/icon-rumah-sakit-png-8.png"))); // NOI18N
+        jLabel4.setText("\n");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(129, 129, 129)
+                .addComponent(BtnObat)
+                .addGap(96, 96, 96)
+                .addComponent(BtnRuangan)
+                .addContainerGap(258, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addComponent(BtnObat)
-                        .addGap(96, 96, 96)
-                        .addComponent(BtnRuangan))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(198, 198, 198)
-                        .addComponent(LblDatamaster))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(198, 198, 198)
-                        .addComponent(LblPerawatan)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(54, 54, 54)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(BtnRawatJalan)
-                    .addComponent(BtnDokter))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(BtnPasien)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BtnPerawat)
-                        .addGap(56, 56, 56))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BtnRawatInap)
-                        .addGap(76, 76, 76))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BtnRawatJalan)
+                            .addComponent(BtnDokter))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(89, 89, 89)
+                                .addComponent(BtnPasien)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
+                                .addComponent(BtnPerawat)
+                                .addGap(56, 56, 56))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(BtnRawatInap)
+                                .addGap(76, 76, 76))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(LblDatamaster)
+                        .addGap(218, 218, 218)
+                        .addComponent(LblPerawatan)
+                        .addGap(137, 137, 137))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(LblDatamaster)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LblDatamaster)
+                    .addComponent(LblPerawatan))
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnDokter)
@@ -143,9 +143,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnObat)
                     .addComponent(BtnRuangan))
-                .addGap(37, 37, 37)
-                .addComponent(LblPerawatan)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnRawatJalan)
                     .addComponent(BtnRawatInap))
@@ -192,7 +190,6 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnDokter;
-    private javax.swing.JButton BtnExit;
     private javax.swing.JButton BtnObat;
     private javax.swing.JButton BtnPasien;
     private javax.swing.JButton BtnPerawat;
@@ -202,6 +199,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel LblDatamaster;
     private javax.swing.JLabel LblPerawatan;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

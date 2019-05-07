@@ -23,44 +23,43 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
-                      <Component id="BtnObat" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                      <Component id="BtnRuangan" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
-                      <Component id="LblDatamaster" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
-                      <Component id="LblPerawatan" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+              <Component id="BtnObat" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+              <Component id="BtnRuangan" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="258" max="32767" attributes="0"/>
           </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="BtnRawatJalan" min="-2" max="-2" attributes="0"/>
-                  <Component id="BtnDokter" min="-2" max="-2" attributes="0"/>
-              </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                      <Component id="BtnPasien" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="BtnPerawat" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="BtnRawatJalan" min="-2" max="-2" attributes="0"/>
+                          <Component id="BtnDokter" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                              <Component id="BtnPasien" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="189" max="32767" attributes="0"/>
+                              <Component id="BtnPerawat" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="BtnRawatInap" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="BtnRawatInap" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="LblDatamaster" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="218" max="-2" attributes="0"/>
+                      <Component id="LblPerawatan" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -69,9 +68,12 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="64" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="LblDatamaster" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="LblDatamaster" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LblPerawatan" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="BtnDokter" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -83,9 +85,7 @@
                   <Component id="BtnObat" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="BtnRuangan" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-              <Component id="LblPerawatan" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace pref="111" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="BtnRawatJalan" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="BtnRawatInap" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -96,60 +96,6 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ec" green="d8" red="c3" type="rgb"/>
-        </Property>
-      </Properties>
-
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="307" max="32767" attributes="0"/>
-                  <Component id="BtnExit" min="-2" max="-2" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="16" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <Component id="BtnExit" max="32767" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-      </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="14" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Aplikasi  Rumah Sakit"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="BtnExit">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="14" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="X"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
     <Component class="javax.swing.JLabel" name="LblDatamaster">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -201,5 +147,57 @@
         <Property name="text" type="java.lang.String" value="Rawat Inap"/>
       </Properties>
     </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f4" green="e7" red="d7" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Rumah Sakit Mitra Ceria"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/hospital/images/icon-rumah-sakit-png-8.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#xa;"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
