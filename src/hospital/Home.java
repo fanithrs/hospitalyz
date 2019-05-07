@@ -38,6 +38,7 @@ public class Home extends javax.swing.JFrame {
         BtnObat = new javax.swing.JButton();
         LblPerawatan = new javax.swing.JLabel();
         BtnRawatJalan = new javax.swing.JButton();
+        BtnRawatInap = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,6 +90,8 @@ public class Home extends javax.swing.JFrame {
 
         BtnRawatJalan.setText("Rawat Jalan");
 
+        BtnRawatInap.setText("Rawat Inap");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -113,11 +116,17 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(BtnRawatJalan)
                     .addComponent(BtnDokter))
-                .addGap(89, 89, 89)
-                .addComponent(BtnPasien)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BtnPerawat)
-                .addGap(56, 56, 56))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(BtnPasien)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BtnPerawat)
+                        .addGap(56, 56, 56))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BtnRawatInap)
+                        .addGap(76, 76, 76))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,7 +146,9 @@ public class Home extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addComponent(LblPerawatan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                .addComponent(BtnRawatJalan)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BtnRawatJalan)
+                    .addComponent(BtnRawatInap))
                 .addGap(60, 60, 60))
         );
 
@@ -185,6 +196,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton BtnObat;
     private javax.swing.JButton BtnPasien;
     private javax.swing.JButton BtnPerawat;
+    private javax.swing.JButton BtnRawatInap;
     private javax.swing.JButton BtnRawatJalan;
     private javax.swing.JButton BtnRuangan;
     private javax.swing.JLabel LblDatamaster;
