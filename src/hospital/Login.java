@@ -5,6 +5,11 @@
  */
 package hospital;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import javax.swing.JOptionPane;
 /**
  *
@@ -135,15 +140,54 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLoginActionPerformed
-        String kataSandi = new String(FieldPassword.getPassword());
+      String kataSandi =
+                new String(FieldPassword.getPassword());
+        Statement stmt = null;
+        ResultSet rs = null;
+        Connection conn = null;
+        
+        try{
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/rumah_sakit?" + "user=root&password=");
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery("SELECT COUNT(*) FROM akun WHERE username='"+FieldUsername.getText()+"' and password='"+kataSandi+"'");
+            //ngambil nilai
+            rs.next();
+            int ada = rs.getInt(1);
+            if(ada==0){
+                JOptionPane.showMessageDialog(this, "Username atau password salah!", "Error Login!", JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(this, "Berhasil Login!", "Error Login!", JOptionPane.INFORMATION_MESSAGE);
+                new Home().setVisible(true);
+                this.dispose();
+            }
+        }  
+            //gunakan variabel rs
+            catch (SQLException ex){
+                    //mengatasi error
+                    System.out.println("SQLException: " + ex.getMessage());
+                    System.out.println("SQLState: " + ex.getSQLState());
+                    System.out.println("VendorError: " + ex.getErrorCode());
+            } 
+        finally{
+                    if(rs != null){
+                        try{
+                            rs.close();
+                        } catch (SQLException sqlEx){} //ignore
+                        
+                    rs = null;
+                    }
+                    
+                    if (stmt != null){
+                        try{
+                            stmt.close();
+                        } catch (SQLException sqlEx){}
+                    
+                    stmt = null;
+                    }
+            }
+            
+        
  
-        if((FieldUsername.getText().equals("fani"))&&(kataSandi.equals("1234"))){
-            JOptionPane.showMessageDialog(this, "Anda Berhasil Login","Pesan", JOptionPane.INFORMATION_MESSAGE);
-            new Home().setVisible(true);
-            this.dispose();
-        } else {
-            JOptionPane.showMessageDialog(this, "Tidak Berhasil Login", "Pesan", JOptionPane.INFORMATION_MESSAGE);
-        }
     }//GEN-LAST:event_BtnLoginActionPerformed
 
     private void FieldPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FieldPasswordActionPerformed
