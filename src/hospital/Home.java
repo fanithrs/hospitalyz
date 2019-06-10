@@ -84,6 +84,11 @@ public class Home extends javax.swing.JFrame {
 
         BtnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/pasien.png"))); // NOI18N
         BtnPasien.setText("Pasien");
+        BtnPasien.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnPasienActionPerformed(evt);
+            }
+        });
 
         BtnRuangan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/ruangan.png"))); // NOI18N
         BtnRuangan.setText("Ruangan");
@@ -161,6 +166,11 @@ public class Home extends javax.swing.JFrame {
         new FormDokter().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BtnDokterActionPerformed
+
+    private void BtnPasienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPasienActionPerformed
+         new FormPasien().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_BtnPasienActionPerformed
 
     /**
      * @param args the command line arguments
