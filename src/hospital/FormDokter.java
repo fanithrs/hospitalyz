@@ -55,6 +55,7 @@ public class FormDokter extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/gtk-edit.png"))); // NOI18N
         jButton1.setText("EDIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,12 +105,15 @@ public class FormDokter extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/gtk-save-as.png"))); // NOI18N
         jButton2.setText("SAVE");
 
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/document_delete.png"))); // NOI18N
         jButton3.setText("DELETE");
 
         jLabel2.setText("Nama Dokter : ");
 
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/Cancel.png"))); // NOI18N
         jButton4.setText("CANCEL");
 
         jLabel3.setText("Alamat          : ");
