@@ -32,11 +32,8 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         LblDatamaster = new javax.swing.JLabel();
-        LblPerawatan = new javax.swing.JLabel();
         BtnDokter = new javax.swing.JButton();
         BtnPasien = new javax.swing.JButton();
-        BtnRawatJalan = new javax.swing.JButton();
-        BtnRawatInap = new javax.swing.JButton();
         BtnRuangan = new javax.swing.JButton();
         BtnObat = new javax.swing.JButton();
         BtnPerawat = new javax.swing.JButton();
@@ -77,9 +74,6 @@ public class Home extends javax.swing.JFrame {
         LblDatamaster.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         LblDatamaster.setText("Data Master");
 
-        LblPerawatan.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        LblPerawatan.setText("Perawatan");
-
         BtnDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/doctor-icon.png"))); // NOI18N
         BtnDokter.setText("Dokter");
         BtnDokter.addActionListener(new java.awt.event.ActionListener() {
@@ -90,10 +84,6 @@ public class Home extends javax.swing.JFrame {
 
         BtnPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/pasien.png"))); // NOI18N
         BtnPasien.setText("Pasien");
-
-        BtnRawatJalan.setText("Rawat Jalan");
-
-        BtnRawatInap.setText("Rawat Inap");
 
         BtnRuangan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/ruangan.png"))); // NOI18N
         BtnRuangan.setText("Ruangan");
@@ -119,17 +109,12 @@ public class Home extends javax.swing.JFrame {
                         .addGap(134, 134, 134)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(BtnPerawat)
-                            .addComponent(LblDatamaster))
-                        .addGap(327, 327, 327)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LblPerawatan)
-                            .addComponent(BtnRawatInap)
-                            .addComponent(BtnRawatJalan)))
+                            .addComponent(LblDatamaster)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(BtnDokter)
                         .addGap(113, 113, 113)
                         .addComponent(BtnPasien)))
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addContainerGap(473, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -148,14 +133,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(24, 24, 24)
                         .addComponent(BtnDokter)
                         .addGap(18, 18, 18)
-                        .addComponent(BtnObat))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(LblPerawatan)
-                        .addGap(18, 18, 18)
-                        .addComponent(BtnRawatJalan)
-                        .addGap(27, 27, 27)
-                        .addComponent(BtnRawatInap)))
+                        .addComponent(BtnObat)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addComponent(BtnPerawat)
                 .addGap(89, 89, 89))
@@ -224,11 +202,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton BtnObat;
     private javax.swing.JButton BtnPasien;
     private javax.swing.JButton BtnPerawat;
-    private javax.swing.JButton BtnRawatInap;
-    private javax.swing.JButton BtnRawatJalan;
     private javax.swing.JButton BtnRuangan;
     private javax.swing.JLabel LblDatamaster;
-    private javax.swing.JLabel LblPerawatan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
