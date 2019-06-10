@@ -98,6 +98,11 @@ public class Home extends javax.swing.JFrame {
 
         BtnPerawat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/nurse1ini.png"))); // NOI18N
         BtnPerawat.setText("Perawat");
+        BtnPerawat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnPerawatActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -171,6 +176,10 @@ public class Home extends javax.swing.JFrame {
          new FormPasien().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_BtnPasienActionPerformed
+
+    private void BtnPerawatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerawatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnPerawatActionPerformed
 
     /**
      * @param args the command line arguments
