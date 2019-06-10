@@ -83,7 +83,7 @@ public class RekamMedis extends javax.swing.JFrame {
 
         jLabel9.setText("ID Pasien :");
 
-        jLabel10.setText("ID Pasien :");
+        jLabel10.setText("Nama Pasien :");
 
         jLabel11.setText("Tekanan Darah :");
 
