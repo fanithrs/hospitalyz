@@ -92,9 +92,19 @@ public class Home extends javax.swing.JFrame {
 
         BtnRuangan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/ruangan.png"))); // NOI18N
         BtnRuangan.setText("Ruangan");
+        BtnRuangan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnRuanganActionPerformed(evt);
+            }
+        });
 
         BtnObat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/obat.png"))); // NOI18N
         BtnObat.setText("Obat");
+        BtnObat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnObatActionPerformed(evt);
+            }
+        });
 
         BtnPerawat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hospital/images/nurse1ini.png"))); // NOI18N
         BtnPerawat.setText("Perawat");
@@ -180,6 +190,16 @@ public class Home extends javax.swing.JFrame {
     private void BtnPerawatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerawatActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BtnPerawatActionPerformed
+
+    private void BtnObatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnObatActionPerformed
+        new FormObat().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_BtnObatActionPerformed
+
+    private void BtnRuanganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRuanganActionPerformed
+        new FormRuangan().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_BtnRuanganActionPerformed
 
     /**
      * @param args the command line arguments
